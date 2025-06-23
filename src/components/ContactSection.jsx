@@ -24,13 +24,13 @@ export const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    emailjs
-      .sendForm(
-        "service_1f112ls", // TODO: Replace with your EmailJS service ID
-        "template_9rmn2z8", // TODO: Replace with your EmailJS template ID
-        formRef.current,
-        "7zv5CG7COQu1CLnv4" // TODO: Replace with your EmailJS public key
-      )
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    
       .then(
         (result) => {
           toast({
