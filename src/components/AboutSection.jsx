@@ -17,14 +17,18 @@ export const AboutSection = () => {
             <p className="text-muted-foreground">
               I'm Swapnil Kale — a passionate software developer and MCA student
               with hands-on experience in building impactful web and mobile apps
-              using <strong>ReactJS</strong>, <strong>Python</strong>, <strong>Flutter</strong>, and <strong>FastAPI</strong>.
-              I love leveraging technology to solve real-world problems, especially those related to sustainability and efficiency.
+              using <strong>ReactJS</strong>, <strong>Python</strong>,{" "}
+              <strong>Flutter</strong>, and <strong>FastAPI</strong>. I love
+              leveraging technology to solve real-world problems, especially
+              those related to sustainability and efficiency.
             </p>
 
             <p className="text-muted-foreground">
-              My journey includes crafting HR management systems, satellite-image-based afforestation tools,
-              and intuitive platforms that blend functionality with user-focused design. I'm a fast learner, 
-              a collaborative teammate, and always up for a challenge that makes me grow.
+              My journey includes crafting HR management systems,
+              satellite-image-based afforestation tools, and intuitive platforms
+              that blend functionality with user-focused design. I&apos;m a fast
+              learner, a collaborative teammate, and always up for a challenge
+              that makes me grow.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -50,9 +54,12 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                  <h4 className="font-semibold text-lg">
+                    Full-Stack Development
+                  </h4>
                   <p className="text-muted-foreground">
-                    Proficient in building robust and scalable web & mobile applications using React, Flutter, Python, and FastAPI.
+                    Proficient in building robust and scalable web & mobile
+                    applications using React, Flutter, Python, and FastAPI.
                   </p>
                 </div>
               </div>
@@ -66,7 +73,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">User-Centric Design</h4>
                   <p className="text-muted-foreground">
-                    I design intuitive and inclusive interfaces that prioritize user needs and accessibility.
+                    I design intuitive and inclusive interfaces that prioritize
+                    user needs and accessibility.
                   </p>
                 </div>
               </div>
@@ -79,9 +87,12 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Implementation</h4>
+                  <h4 className="font-semibold text-lg">
+                    Project Implementation
+                  </h4>
                   <p className="text-muted-foreground">
-                    Experienced in managing full project lifecycles—from ideation to deployment—following agile principles.
+                    Experienced in managing full project lifecycles—from
+                    ideation to deployment—following agile principles.
                   </p>
                 </div>
               </div>

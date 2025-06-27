@@ -11,21 +11,26 @@ export const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hey there, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}Swapnil
+              {" "}
+              Swapnil
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}Kale
+              {" "}
+              Kale
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            A full-stack developer passionate about building impactful digital experiences. 
-            I specialize in React, Python, Flutter, and FastAPI—bringing ideas to life through clean code, great design, and powerful problem-solving.
+            A full-stack developer passionate about building impactful digital
+            experiences. I specialize in React, Python, Flutter, and
+            FastAPI—bringing ideas to life through clean code, great design, and
+            powerful problem-solving.
           </p>
 
           <p className="text-md text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            From crafting HR systems to AI-driven afforestation apps, I create tech that matters. 
-            Let’s innovate and solve real-world problems—together.
+            From crafting HR systems to AI-driven afforestation apps, I create
+            tech that matters. Let’s innovate and solve real-world
+            problems—together.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -58,7 +63,7 @@ export const HeroSection = () => {
 //             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
 //             <span className="text-primary opacity-0 animate-fade-in-delay-1">
 //               {" "}
-//               Swapnil 
+//               Swapnil
 //             </span>
 //             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
 //               {" "}

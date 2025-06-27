@@ -1,4 +1,4 @@
-import { ArrowUp, Linkedin, Twitter, Github } from "lucide-react";
+import { ArrowUp, Linkedin, Twitter, Github, Globe } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,17 +10,46 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col items-center gap-2">
         <div className="flex space-x-4 justify-center mb-1">
-          <a href="https://www.linkedin.com/in/swapnilkale1411/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
+          <a
+            href="https://www.linkedin.com/in/swapnilkale1411/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+          >
             <Linkedin />
           </a>
-          <a href="https://x.com/kale_swapn20206" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
+          <a
+            href="https://x.com/kale_swapn20206"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+          >
             <Twitter />
           </a>
-          <a href="https://github.com/swapsDotDev" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors">
+          <a
+            href="https://github.com/swapsDotDev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+          >
             <Github />
           </a>
+          <a
+            href="https://peerlist.io/swapdotdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+            aria-label="Peerlist"
+          >
+            <Globe />
+          </a>
         </div>
-        <a href="mailto:swapnilkale1411@gmail.com" className="text-xs text-muted-foreground hover:text-primary transition-colors">swapnilkale1411@gmail.com</a>
+        <a
+          href="mailto:swapnilkale1411@gmail.com"
+          className="text-xs text-muted-foreground hover:text-primary transition-colors"
+        >
+          swapnilkale1411@gmail.com
+        </a>
       </div>
       <a
         href="#hero"
