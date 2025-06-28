@@ -14,32 +14,24 @@ export const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    emailjs
-      .sendForm(
-        serviceId, // TODO: Replace with your EmailJS service ID
-        templateId, // TODO: Replace with your EmailJS template ID
-        formRef.current,
-        publicKey, // TODO: Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          toast({
-            title: "Message sent!",
-            description:
-              "Thank you for your message. I'll get back to you soon.",
-          });
-          setIsSubmitting(false);
-          if (formRef.current) formRef.current.reset();
-        },
-        (error) => {
-          toast({
-            title: "Failed to send message.",
-            description: "Please try again later.",
-            variant: "destructive",
-          });
-          setIsSubmitting(false);
-        },
-      );
+    emailjs.sendForm(serviceId, templateId, formRef.current, publicKey).then(
+      (result) => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        setIsSubmitting(false);
+        if (formRef.current) formRef.current.reset();
+      },
+      (error) => {
+        toast({
+          title: "Failed to send message.",
+          description: "Please try again later.",
+          variant: "destructive",
+        });
+        setIsSubmitting(false);
+      },
+    );
   };
 
   return (
@@ -50,7 +42,7 @@ export const ContactSection = () => {
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          I&apos;m always open to discussing new opportunities.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8 flex flex-col justify-center h-full">

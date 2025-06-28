@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          A showcase of projects where I've applied technology to build
+          A showcase of projects where I&apos;ve applied technology to build
           practical, scalable, and user-focused applications that solve
           real-world problems.
         </p>
@@ -94,6 +94,7 @@ export const ProjectsSection = () => {
                       <a
                         href={project.demoUrl}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                       >
                         <ExternalLink size={20} />
@@ -102,6 +103,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
@@ -117,6 +119,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/swapsDotDev"
           >
             Check My GitHub <ArrowRight size={16} />
@@ -180,7 +183,7 @@ export const ProjectsSection = () => {
 //         </h2>
 
 //         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-//           A showcase of projects where I've applied technology to build practical,
+//           A showcase of projects where I&apos;ve applied technology to build practical,
 //           scalable, and user-focused applications that solve real-world problems.
 //         </p>
 

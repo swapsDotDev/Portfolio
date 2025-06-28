@@ -15,8 +15,8 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              I'm Swapnil Kale — a passionate software developer and MCA student
-              with hands-on experience in building impactful web and mobile apps
+              I&apos;m Swapnil Kale — a passionate software developer with
+              hands-on experience in building impactful web and mobile apps
               using <strong>ReactJS</strong>, <strong>Python</strong>,{" "}
               <strong>Flutter</strong>, and <strong>FastAPI</strong>. I love
               leveraging technology to solve real-world problems, especially
@@ -37,10 +37,10 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1IeHfWw3YyUd-bNt4hUB9JG32tFijcqym/view?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1dpQXWMza-DdCXSlqKms3abRZfKsfsrCW?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="cosmic-button"
               >
                 Download CV
               </a>
@@ -128,8 +128,8 @@ export const AboutSection = () => {
 //             </p>
 
 //             <p className="text-muted-foreground">
-//               I'm passionate about creating elegant solutions to complex
-//               problems, and I'm constantly learning new technologies and
+//               I&apos;m passionate about creating elegant solutions to complex
+//               problems, and I&apos;m constantly learning new technologies and
 //               techniques to stay at the forefront of the ever-evolving web
 //               landscape.
 //             </p>
