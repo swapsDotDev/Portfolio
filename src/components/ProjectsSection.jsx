@@ -52,7 +52,7 @@ const PROJECT_DETAILS = {
     title: "URL Shortener",
     description: "A Flask-based URL shortening service similar to TinyURL, built with MySQL (no ORM) and vanilla HTML/CSS.",
     techStack: ["Flask", "MySQL", "HTML", "CSS", "GitHub Actions - CI/CD", "Pytest"],
-    image: "projects/url-shortener.png",
+    image: "projects/urlshortner.png",
     featured: true
   },
   "civic-voice": {
@@ -66,9 +66,16 @@ const PROJECT_DETAILS = {
     title: "Movie Database App",
     description: "A modern, responsive web app to browse and search for movies using the OMDb API. By default, it displays a curated list of top-rated movies (sorted by IMDb rating). Users can search for any movie, paginate through results, and reset to the top-rated list at any time.",
     techStack: ["React", "OMDb API", "TailwindCSS"],
-    image: "projects/movie-database-app.png",
+    image: "projects/project1.png",
     featured: true
   },
+  "leave-management-microservice": {
+    title: "Leave Management Microservice",
+    description: "A simple but real-world Spring Boot microservice to manage employee leave requests. It demonstrates: REST APIs, PostgreSQL DB, Apache Kafka integration, Docker & Docker Compose, CI/CD basics with Maven.",
+    techStack: ["Spring Boot", "PostgreSQL", "Apache Kafka", "Docker"],
+    image: "projects/project2.png",
+    featured: true 
+  }
 };
 
 const FEATURED_REPOS = Object.keys(PROJECT_DETAILS);
@@ -126,6 +133,11 @@ export const ProjectsSection = () => {
         
         const allRepos = await response.json();
         
+        // Debug logging
+        console.log(`Found ${allRepos.length} total repositories`);
+        console.log('Repository names:', allRepos.map(repo => repo.name));
+        console.log('Looking for featured repos:', FEATURED_REPOS);
+        
         // Filter and enhance featured repositories
         const featuredProjects = allRepos
           .filter(repo => FEATURED_REPOS.includes(repo.name))
@@ -141,13 +153,44 @@ export const ProjectsSection = () => {
               isFeatured: projectDetails?.featured || false
             };
           });
+
+        // Add any missing featured projects that weren't found in GitHub repos
+        const foundRepoNames = featuredProjects.map(p => p.name);
+        const missingProjects = FEATURED_REPOS
+          .filter(repoName => !foundRepoNames.includes(repoName))
+          .map(repoName => {
+            const projectDetails = PROJECT_DETAILS[repoName];
+            return {
+              id: `fallback-${repoName}`,
+              name: repoName,
+              title: projectDetails?.title || repoName,
+              enhancedDescription: projectDetails?.description || "No description available",
+              html_url: `https://github.com/${GITHUB_USERNAME}/${repoName}`,
+              homepage: null,
+              language: projectDetails?.techStack?.[0] || "JavaScript",
+              techStack: projectDetails?.techStack || [],
+              topics: [],
+              stargazers_count: 0,
+              updated_at: new Date().toISOString(),
+              image: projectDetails?.image || "projects/project1.png",
+              isFeatured: projectDetails?.featured || false
+            };
+          });
+
+        // Combine found projects with missing ones
+        const allFeaturedProjects = [...featuredProjects, ...missingProjects];
+        
+        // Debug logging
+        console.log(`Featured projects found: ${featuredProjects.length}`);
+        console.log(`Missing projects added: ${missingProjects.length}`);
+        console.log(`Total projects to show: ${allFeaturedProjects.length}`);
         
         // If no featured projects found, take the most recent public repos and enhance them
-        const projectsToShow = featuredProjects.length > 0 
-          ? featuredProjects 
+        const projectsToShow = allFeaturedProjects.length > 0 
+          ? allFeaturedProjects 
           : allRepos
               .filter(repo => !repo.fork && !repo.private)
-              .slice(0, 6)
+              .slice(0, 12) // Increased limit for non-featured projects
               .map(repo => ({
                 ...repo,
                 title: repo.name,
