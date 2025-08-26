@@ -9,7 +9,7 @@ const PROJECT_DETAILS = {
     title: "Avkash – Leave Portal & HRMS",
     description: "End-to-end HR management and leave tracking system with real-time notifications, dashboards, and role-based access.",
     techStack: ["ReactJS", "FastAPI", "MongoDB", "Radix UI"],
-    image: "projects/avkash.png",
+    image: "projects/avkash.webp",
     featured: true,
     category: "fullstack",
     status: "production"
@@ -18,7 +18,7 @@ const PROJECT_DETAILS = {
     title: "GreenVision – Afforestation App", 
     description: "AI-powered mobile & web platform that analyzes satellite images to estimate afforestation potential using OpenCV and Flask.",
     techStack: ["Python", "Flutter", "MongoDB", "OpenCV"],
-    image: "projects/greenvision.png",
+    image: "projects/greenvision.webp",
     featured: true,
     category: "ai-ml",
     status: "production"
@@ -27,7 +27,7 @@ const PROJECT_DETAILS = {
     title: "Personal Portfolio Website",
     description: "Responsive and modern portfolio website built with React and Vite, featuring dynamic GitHub integration and modern UI components.",
     techStack: ["React", "Vite", "TailwindCSS", "Lucide Icons"],
-    image: "projects/portfolio.png", 
+    image: "projects/portfolio.webp", 
     featured: true,
     category: "frontend",
     status: "active"
@@ -36,7 +36,7 @@ const PROJECT_DETAILS = {
     title: "Acres99 – Real Estate Platform",
     description: "Property listing platform with MySQL-backed PHP backend and user-friendly frontend for seamless property browsing and management.",
     techStack: ["React", "PHP", "MySQL", "Bootstrap"],
-    image: "projects/acres99.png",
+    image: "projects/acres99.webp",
     featured: true,
     category: "fullstack",
     status: "production"
@@ -45,7 +45,7 @@ const PROJECT_DETAILS = {
     title: "Real-Time Task Board",
     description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
     techStack: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "projects/taskboard.png",
+    image: "projects/taskboard.webp",
     featured: true,
     category: "fullstack",
     status: "development"
@@ -54,7 +54,7 @@ const PROJECT_DETAILS = {
     title: "MyChoice – Landing Page",
     description: "A modern, responsive homepage for MyChoice - a free online self-exclusion platform for New Zealand. It acts as a national register for individuals to willingly block online gambling sites.",
     techStack: ["React", "TailwindCSS", "Lucide Icons", "React Icons"],
-    image: "projects/mychoice.png",
+    image: "projects/mychoice.webp",
     featured: true,
     category: "frontend",
     status: "production"
@@ -63,7 +63,7 @@ const PROJECT_DETAILS = {
     title: "URL Shortener",
     description: "A Flask-based URL shortening service similar to TinyURL, built with MySQL (no ORM) and vanilla HTML/CSS.",
     techStack: ["Flask", "MySQL", "HTML", "CSS", "GitHub Actions", "Pytest"],
-    image: "projects/urlshortner.png",
+    image: "projects/urlshortner.webp",
     featured: true,
     category: "backend",
     status: "production"
@@ -72,7 +72,7 @@ const PROJECT_DETAILS = {
     title: "Civic Voice – Community Engagement",
     description: "A community engagement platform that connects citizens with local government initiatives, featuring event management, feedback collection, and resource sharing.",
     techStack: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
-    image: "projects/civicvoice.png",
+    image: "projects/civicvoice.webp",
     featured: true,
     category: "fullstack",
     status: "development"
@@ -81,7 +81,7 @@ const PROJECT_DETAILS = {
     title: "Movie Database App",
     description: "A modern, responsive web app to browse and search for movies using the OMDb API. By default, it displays a curated list of top-rated movies (sorted by IMDb rating). Users can search for any movie, paginate through results, and reset to the top-rated list at any time.",
     techStack: ["React", "OMDb API", "TailwindCSS"],
-    image: "projects/project1.png",
+    image: "projects/project1.webp",
     featured: true,
     category: "frontend",
     status: "production"
@@ -90,7 +90,7 @@ const PROJECT_DETAILS = {
     title: "Leave Management Microservice",
     description: "A simple but real-world Spring Boot microservice to manage employee leave requests. It demonstrates: REST APIs, PostgreSQL DB, Apache Kafka integration, Docker & Docker Compose, CI/CD basics with Maven.",
     techStack: ["Spring Boot", "PostgreSQL", "Apache Kafka", "Docker"],
-    image: "projects/project2.png",
+    image: "projects/project2.webp",
     featured: true,
     category: "backend",
     status: "production"
@@ -113,7 +113,7 @@ const fallbackProjects = [
     topics: ["reactjs", "fastapi", "mongodb", "radix-ui"],
     stargazers_count: 0,
     updated_at: "2024-01-01T00:00:00Z",
-    image: "projects/avkash.png",
+    image: "projects/avkash.webp",
     isFeatured: true,
     category: "fullstack",
     status: "production"
@@ -130,7 +130,7 @@ const fallbackProjects = [
     topics: ["python", "flutter", "mongodb", "opencv"],
     stargazers_count: 0,
     updated_at: "2024-01-01T00:00:00Z",
-    image: "projects/greenvision.png",
+    image: "projects/greenvision.webp",
     isFeatured: true,
     category: "ai-ml",
     status: "production"
@@ -167,7 +167,7 @@ const getCategoryIcon = (category) => {
   return categoryMap[category] || "💻";
 };
 
-const getProjectImage = (project) => project.image || "projects/project1.png";
+const getProjectImage = (project) => project.image || "projects/project1.webp";
 
 // Reusable Components
 const TechTag = ({ tech }) => (
@@ -257,7 +257,7 @@ export default function ProjectsSection() {
             title: PROJECT_DETAILS[repo.name]?.title || repo.name,
             enhancedDescription: PROJECT_DETAILS[repo.name]?.description || repo.description,
             techStack: PROJECT_DETAILS[repo.name]?.techStack || [repo.language].filter(Boolean),
-            image: PROJECT_DETAILS[repo.name]?.image || "projects/project1.png",
+            image: PROJECT_DETAILS[repo.name]?.image || "projects/project1.webp",
             isFeatured: PROJECT_DETAILS[repo.name]?.featured || false,
             category: PROJECT_DETAILS[repo.name]?.category || "misc",
             status: PROJECT_DETAILS[repo.name]?.status || "development",
@@ -288,7 +288,7 @@ export default function ProjectsSection() {
                 title: repo.name,
                 enhancedDescription: repo.description,
                 techStack: [repo.language].filter(Boolean),
-                image: "projects/project1.png",
+                image: "projects/project1.webp",
                 isFeatured: false,
                 category: "misc",
                 status: "development",
@@ -403,6 +403,8 @@ export default function ProjectsSection() {
                   src={getProjectImage(project)}
                   alt={project.title || project.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) =>
                     (e.target.src =
                       "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjMzMzIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM2NjYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIwLjNlbSI+UHJvamVjdCBJbWFnZTwvdGV4dD4KPC9zdmc+")

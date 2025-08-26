@@ -6,7 +6,7 @@ const skills = [
   // Frontend
   { 
     name: "HTML/CSS", 
-    logo: "/projects/logo/html.png", 
+    logo: "/projects/logo/html.webp", 
     category: "frontend",
     proficiency: 90,
     description: "Semantic HTML5 & Modern CSS3",
@@ -14,7 +14,7 @@ const skills = [
   },
   { 
     name: "JavaScript", 
-    logo: "/projects/logo/js.png", 
+    logo: "/projects/logo/js.webp", 
     category: "frontend",
     proficiency: 85,
     description: "ES6+, DOM manipulation, Async/Await",
@@ -22,7 +22,7 @@ const skills = [
   },
   { 
     name: "ReactJS", 
-    logo: "/projects/logo/react.png", 
+    logo: "/projects/logo/react.webp", 
     category: "frontend",
     proficiency: 80,
     description: "Hooks, Context API, Component lifecycle",
@@ -30,7 +30,7 @@ const skills = [
   },
   { 
     name: "NextJS", 
-    logo: "/projects/logo/nextjs.jpg", 
+    logo: "/projects/logo/nextjs.webp",
     category: "frontend",
     proficiency: 75,
     description: "SSR, SSG, API Routes, App Router",
@@ -40,7 +40,7 @@ const skills = [
   // Backend
   { 
     name: "NodeJS", 
-    logo: "/projects/logo/nodejs.png", 
+    logo: "/projects/logo/nodejs.webp", 
     category: "backend",
     proficiency: 85,
     description: "Event-driven, Non-blocking I/O",
@@ -48,7 +48,7 @@ const skills = [
   },
   {
     name: "ExpressJS",
-    logo: "/projects/logo/expressjs.jpg",
+    logo: "/projects/logo/expressjs.webp",
     category: "backend",
     proficiency: 80,
     description: "RESTful APIs, Middleware, Authentication",
@@ -56,7 +56,7 @@ const skills = [
   },
   { 
     name: "MongoDB", 
-    logo: "/projects/logo/mongodb.png", 
+    logo: "/projects/logo/mongodb.webp", 
     category: "backend",
     proficiency: 75,
     description: "NoSQL, Aggregation, Schema design",
@@ -64,7 +64,7 @@ const skills = [
   },
   {
     name: "PostgreSQL",
-    logo: "/projects/logo/elephant.png",
+    logo: "/projects/logo/elephant.webp",
     category: "backend",
     proficiency: 70,
     description: "Relational DB, Complex queries, Indexing",
@@ -72,7 +72,7 @@ const skills = [
   },
   { 
     name: "Python", 
-    logo: "/projects/logo/python.png", 
+    logo: "/projects/logo/python.webp", 
     category: "backend",
     proficiency: 75,
     description: "OOP, Data structures, Automation",
@@ -80,7 +80,7 @@ const skills = [
   },
   { 
     name: "FastAPI", 
-    logo: "/projects/logo/api.png", 
+    logo: "/projects/logo/api.webp", 
     category: "backend",
     proficiency: 70,
     description: "Async APIs, Auto docs, Type hints",
@@ -88,7 +88,7 @@ const skills = [
   },
   { 
     name: "Flutter", 
-    logo: "/projects/logo/flutter.jpg", 
+    logo: "/projects/logo/flutter.webp", 
     category: "mobile",
     proficiency: 65,
     description: "Cross-platform mobile development",
@@ -98,7 +98,7 @@ const skills = [
   // Tools
   { 
     name: "Git/GitHub", 
-    logo: "/projects/logo/github.png", 
+    logo: "/projects/logo/github.webp", 
     category: "tools",
     proficiency: 85,
     description: "Version control, Branching, CI/CD",
@@ -106,7 +106,7 @@ const skills = [
   },
   { 
     name: "Docker", 
-    logo: "/projects/logo/docker.png", 
+    logo: "/projects/logo/docker.webp", 
     category: "tools",
     proficiency: 70,
     description: "Containerization, Multi-stage builds",
@@ -114,7 +114,7 @@ const skills = [
   },
   { 
     name: "Postman", 
-    logo: "/projects/logo/Postman.jpg", 
+    logo: "/projects/logo/Postman.webp", 
     category: "tools",
     proficiency: 90,
     description: "API testing, Collections, Environments",
@@ -122,7 +122,7 @@ const skills = [
   },
   {
     name: "Agentic AI",
-    logo: "/projects/logo/ai-brain.png",
+    logo: "/projects/logo/ai-brain.webp",
     category: "tools",
     proficiency: 60,
     description: "LLMs, Prompt engineering, AI workflows",
@@ -130,7 +130,7 @@ const skills = [
   },
   { 
     name: "OpenCV", 
-    logo: "/projects/logo/ai.png",
+    logo: "/projects/logo/ai.webp",
     category: "tools",
     proficiency: 55,
     description: "Computer vision, Image processing",
