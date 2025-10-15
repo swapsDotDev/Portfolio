@@ -134,14 +134,14 @@ const terminalCommands = [
               <Terminal className="h-4 w-4 sm:h-5 sm:w-5" />
               <span className="font-mono text-xs sm:text-sm">/home/swapnil</span>
             </div>
-            {/* Mobile OS info below path, only on mobile */}
+            {/* Mobile OS info below path, only on mobile 
             <div className="mt-2 flex justify-center lg:hidden">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-3 py-1.5">
-                <span className="text-sm">{osInfo[currentOS].icon}</span>
+                {/*<span className="text-sm">{osInfo[currentOS].icon}</span>
                 <span className="text-xs font-mono text-gray-300">{osInfo[currentOS].name.split(" ")[0]}</span>
               </div>
-            </div>
-            <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
+            </div>*/}
+            <h1 className="mt-9 text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
               <span className="text-black dark:text-white">Swapnil</span>
                 <span className="ml-3 text-transparent bg-clip-text 
                    bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600
