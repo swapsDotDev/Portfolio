@@ -97,19 +97,29 @@ const terminalCommands = [
     </div>
   );
 
-  const StatCard = ({ icon, label, value, color }) => (
-    <div className="bg-slate-800/50 dark:bg-slate-800/50 light:bg-white/70 
-                    backdrop-blur border border-slate-700 dark:border-slate-700 light:border-slate-300 
-                    rounded-lg p-2 sm:p-3 hover:scale-105 transition-transform duration-200">
-      <div className="flex items-center gap-2">
-        {icon}
-        <span className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">{label}</span>
-      </div>
-      <div className={`text-xs sm:text-sm font-mono ${color || "text-white dark:text-white light:text-gray-900"}`}>
-        {value}
-      </div>
+const StatCard = ({ icon, label, value, color }) => (
+  <div
+    className="bg-slate-800/50 dark:bg-slate-800/50 light:bg-white/70 
+               border border-slate-700 dark:border-slate-700 light:border-slate-300 
+               rounded-lg p-2 sm:p-3">
+    <div className="flex items-center gap-2">
+      {icon}
+      <span className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
+        {label}
+      </span>
     </div>
-  );
+    <div
+      className={`text-xs sm:text-sm font-mono ${
+        color || "text-white dark:text-white light:text-gray-900"
+      }`}
+    >
+      {value}
+    </div>
+  </div>
+);
+
+
+
 
   // --- JSX ---
   return (
@@ -142,7 +152,8 @@ const terminalCommands = [
               </div>
             </div>*/}
             <h1 className="mt-9 text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
-              <span className="text-black dark:text-white">Swapnil</span>
+              <span className="ml-3 text-emerald-600 dark:text-emerald-400 opacity-0 animate-fade-in-delay-1">
+                Swapnil</span>
                 <span className="ml-3 text-transparent bg-clip-text 
                    bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600
                    dark:from-blue-400 dark:via-purple-500 dark:to-emerald-400
