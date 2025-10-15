@@ -8,9 +8,9 @@ export const HeroSection = () => {
 
   // --- Data ---
   const osInfo = [
-    { name: "Ubuntu 22.04 LTS", icon: <img src="/projects/logo/Linux.png" alt="Linux" className="w-6 h-6" />, color: "#E95420" },
-    { name: "macOS Ventura", icon: <img src="/projects/logo/apple.png" alt="macOS" className="w-8 h-8" />, color: "#007AFF" },
-    { name: "Windows 11 Pro", icon: <img src="/projects/logo/Windows11.png" alt="Windows" className="w-6 h-6" />, color: "#0078D4" }
+    { name: "Ubuntu 22.04 LTS", icon: <img src="/projects/logo/Linux.webp" alt="Linux" className="w-6 h-6" />, color: "#E95420" },
+    { name: "macOS Ventura", icon: <img src="/projects/logo/apple.webp" alt="macOS" className="w-9 h-9" />, color: "#007AFF" },
+    { name: "Windows 11 Pro", icon: <img src="/projects/logo/Windows11.webp" alt="Windows" className="w-6 h-6" />, color: "#0078D4" }
   ];
 
 const terminalCommands = [
@@ -263,6 +263,8 @@ const terminalCommands = [
         <ArrowDown className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400" />
       </div>
     </section>
+
+    
   );
 };
 
