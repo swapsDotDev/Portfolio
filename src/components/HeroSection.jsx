@@ -142,7 +142,7 @@ const terminalCommands = [
               </div>
             </div>
             <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
-              <span className="opacity-0 animate-fade-in text-black dark:text-white">Swapnil</span>
+              <span className="text-black dark:text-white">Swapnil</span>
                 <span className="ml-3 text-transparent bg-clip-text 
                    bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600
                    dark:from-blue-400 dark:via-purple-500 dark:to-emerald-400
