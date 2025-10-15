@@ -163,7 +163,7 @@ const StatCard = ({ icon, label, value, color }) => (
               <span className="opacity-0 animate-fade-in text-purple-300">
                 Full-Stack
               </span>
-              <span className="ml-2 text-emerald-600 dark:text-purple-300 opacity-0 animate-fade-in-delay-1">
+              <span className="ml-2 text-purple-300 opacity-0 animate-fade-in-delay-1">
                 Developer
               </span>
             </h1>
