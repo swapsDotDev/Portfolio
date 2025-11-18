@@ -94,7 +94,18 @@ const PROJECT_DETAILS = {
     featured: true,
     category: "backend",
     status: "production"
-  }
+  },
+  "HR-Outreach": {
+    title: "HR Outreach",
+    description: "A Python-based automation tool that sends personalized job application emails to HR contacts. Includes resume attachments, CSV-based contact management, .env configuration, logging, and human-like messaging templates.",
+    techStack: ["Python", "SMTP", "dotenv", "CSV Automation"],
+    image: "projects/hroutreach.png",
+    featured: true,
+    category: "automation",
+    status: "production"
+},
+
+
 };
 
 const FEATURED_REPOS = Object.keys(PROJECT_DETAILS);
@@ -308,16 +319,16 @@ export default function ProjectsSection() {
     fetchGitHubProjects();
   }, []);
 
-  // Memoized Stats
-  const stats = useMemo(
-    () => ({
-      total: projects.length,
-      production: projects.filter((p) => p.status === "production").length,
-      technologies: [...new Set(projects.flatMap((p) => p.techStack || [p.language]).filter(Boolean))].length,
-      stars: projects.reduce((sum, p) => sum + (p.stargazers_count || 0), 0),
-    }),
-    [projects]
-  );
+  // // Memoized Stats
+  // const stats = useMemo(
+  //   () => ({
+  //     total: projects.length,
+  //     production: projects.filter((p) => p.status === "production").length,
+  //     technologies: [...new Set(projects.flatMap((p) => p.techStack || [p.language]).filter(Boolean))].length,
+  //     stars: projects.reduce((sum, p) => sum + (p.stargazers_count || 0), 0),
+  //   }),
+  //   [projects]
+  // );
 
   if (loading) {
     return (
@@ -355,7 +366,7 @@ export default function ProjectsSection() {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
             <span className="text-gray-100">Featured</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 ml-2">
               Projects
             </span>
           </h2>
@@ -481,7 +492,7 @@ export default function ProjectsSection() {
         </div>
 
 
-        <div className="mt-16 pt-16 border-t border-slate-700/30">
+        {/* <div className="mt-16 pt-16 border-t border-slate-700/30">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
               { value: stats.total, label: "Projects", color: "text-emerald-400" },
@@ -495,7 +506,7 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <style jsx>{`
           @keyframes fade-in {
