@@ -147,6 +147,18 @@
 }
 
 @utility star {
+  @apply absolute rounded-full;
+  background: radial-gradient(circle, white 0%, rgba(255,255,255,0.7) 70%, transparent 100%);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.5);
+}
+
+@utility meteor {
+  @apply absolute rounded-full;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4) 60%, transparent 100%);
+  box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* @utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
@@ -154,7 +166,7 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
-}
+} */
 
 #root {
   max-width: 100%;
