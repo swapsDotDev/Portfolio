@@ -96,9 +96,6 @@ Visit `http://localhost:5173` (or the port shown by Vite).
 3. Use default build settings (Vite). Set any required environment variables.
 4. Deploy — your site will be live on a vercel.app subdomain.
 
-### Demo: HR Outreach
-
-The HR Outreach project includes a safe demo mode (simulation) and Mailtrap integration for previewing email output without sending to real recipients. Consider deploying the demo as a small Flask app (see project README) and exposing the demo behind an opt-in page.
 
 ---
 
