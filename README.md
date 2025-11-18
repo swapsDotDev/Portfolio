@@ -1,91 +1,123 @@
+# Swapnil Kale — Portfolio
+
+**Full-Stack Developer (MERN + Python)**
+
+Passionate about building scalable, user-focused applications across the stack. From responsive React frontends to robust Node.js backends and Python microservices, I create clean, efficient, and reliable solutions that work seamlessly across platforms.
+
+* **Location:** Pune, Maharashtra, India
+* **Email:** [swapnilkale1411@gmail.com](mailto:swapnilkale1411@gmail.com)
+* **Status:** Available
+* **Experience:** 6+ months professional (Jan 2025 - Present)
+* **Runtime / Motto:** Coding for 6 months, passionate for a lifetime ⚡
+
+---
+
 ## ⚙️ Tech Stack
 
-- **React** – Component-based UI development
-- **Vite** – Lightning-fast build tool
-- **TailwindCSS** – Utility-first CSS for styling
-- **Lucide Icons** – Clean and beautiful icon pack
-- **Radix UI** – Accessible component primitives
-- **TypeScript (optional)** – Type safety and tooling
-- **GitHub & Vercel** – Deployment
+* **Frontend:** React, Vite, TailwindCSS, Lucide Icons, Radix UI
+* **Backend:** Node.js, Express, FastAPI, Python
+* **Databases:** MongoDB, PostgreSQL
+* **Mobile:** Flutter
+* **Tools:** Git/GitHub, Docker, Postman, CI/CD
+* **Other:** TypeScript (optional), Agentic AI, OpenCV
 
 ---
 
-## ⚡️ Features
+## ⚡️ Features (Portfolio Site)
 
-- 🌑 **Light/Dark Mode Toggle**
-  Save theme preference in local storage with beautiful transitions
-
-- 💫 **Animated Backgrounds**
-  Stars, meteors, scroll effects, and glowing UI elements
-
-- 📱 **Responsive Navigation**
-  Desktop and mobile menus with glassmorphism
-
-- 👨‍💻 **Hero & About Sections**
-  Showcase who you are with smooth intro animations and buttons
-
-- 📊 **Skills Grid**
-  Filterable progress bars and categories with animated width
-
-- 🖼️ **Projects Showcase**
-  Display screenshots, tech stacks, and GitHub/demo links
-
-- 📩 **Contact Section**
-  Social icons + responsive contact form with toast notifications
-
-- 🚀 **One-Click Deployment**
-  Easily host your site with Vercel and GitHub
+* 🌑 **Light/Dark Mode** — Saves theme preference in localStorage with smooth transitions
+* 💫 **Animated Backgrounds** — Subtle stars/meteors and scroll effects
+* 📱 **Responsive Navigation** — Mobile-first menus and accessible navigation
+* 👨‍💻 **Hero & About** — Concise intro and professional summary
+* 📊 **Skills Grid** — Filterable skills with animated progress indicators
+* 🖼️ **Projects Showcase** — Screenshots, tech stacks, status badges and links to demo/code
+* 📩 **Contact Section** — Social links and responsive contact form
+* 🚀 **One-Click Deployment** — Easy deploy to Vercel or similar platforms
 
 ---
 
-## 👌 Quick Start
+## ✅ Highlights & Stats
+
+* **6+ months** professional coding experience
+* **15+ projects/repos** (15+ public repos)
+* **750+ commits** across projects
+* **50K+ LOC** (aggregate across projects)
+* **Projects deployed:** 4+
+
+---
+
+## 🔭 Featured Projects
+
+A selection of work that demonstrates end-to-end development, system design, and product thinking.
+
+* **Real-Time Task Board** — Collaborative task-management app with real-time updates (React, Node, Socket.io, MongoDB)
+* **MyChoice – Landing Page** — Responsive marketing site with modern UI (React, Tailwind)
+* **Civic Voice** — Community engagement platform (React, Node, Express, MongoDB)
+* **Personal Portfolio Website** — This site (React, Vite, Tailwind)
+* **Leave Management Microservice** — Spring Boot microservice with PostgreSQL & Kafka (Dockerized)
+* **GreenVision – Afforestation App** — AI-powered image analysis (Python, Flask, OpenCV, Flutter)
+* **HR Outreach Automation** — Python-based email automation for job applications (CSV-driven, .env-backed, resume attachments, demo mode)
+
+(See `/projects` for a full list.)
+
+---
+
+## 🧰 Local Development — Quick Start
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/)
-- [Git](https://git-scm.com/)
+* Node.js (recommended 16+)
+* Git
 
-### Clone and Run
+### Run locally
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+# clone the repo
+git clone https://github.com/YOUR_USERNAME/portfolio.git
 cd portfolio
+
+# install deps
 npm install
+
+# start dev server
 npm run dev
 ```
 
-Your app will be available at: [http://localhost:5173](http://localhost:5173)
-
----
-
-## 🖼️ Screenshots
-
-> 📸 Add screenshots of your Hero section, Projects grid, and Contact form here to show off your site.
+Visit `http://localhost:5173` (or the port shown by Vite).
 
 ---
 
 ## ☁️ Deployment
 
-### Deploy on Vercel
+### Deploy to Vercel
 
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Click **Deploy**
+1. Push the repository to GitHub.
+2. Sign in to [Vercel](https://vercel.com) and import the repo.
+3. Use default build settings (Vite). Set any required environment variables.
+4. Deploy — your site will be live on a vercel.app subdomain.
 
-Your live website will be hosted on a custom subdomain (e.g. `https://your-name.vercel.app`)
+### Demo: HR Outreach
 
----
-
-## 🔗 Useful Links
-
-- [React Documentation](https://reactjs.org/)
-- [Tailwind CSS Docs](https://tailwindcss.com/)
-- [Lucide Icons](https://lucide.dev/)
-- [Radix UI](https://www.radix-ui.com/)
-- [Vite](https://vitejs.dev/)
-- [Vercel](https://vercel.com/)
+The HR Outreach project includes a safe demo mode (simulation) and Mailtrap integration for previewing email output without sending to real recipients. Consider deploying the demo as a small Flask app (see project README) and exposing the demo behind an opt-in page.
 
 ---
 
-Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or a banner image suggestion!
+## 📝 README Tips & Good Practices
+
+* Add a `README.md` inside each project folder with: what it does, how to run, tech stack, and screenshots.
+* Include `LICENSE` if you want to open-source any project.
+* Add `.env.example` showing environment variable names (without secrets).
+
+---
+
+## 📫 Contact
+
+If you'd like to collaborate or see a live demo, reach out:
+
+* **Email:** [swapnilkale1411@gmail.com](mailto:swapnilkale1411@gmail.com)
+* **LinkedIn:** [https://linkedin.com/in/swapnilkale1411](https://linkedin.com/in/swapnilkale1411)
+* **GitHub:** [https://github.com/swapsDotDev](https://github.com/swapsDotDev)
+
+Thanks for visiting — let’s build something amazing together! 🚀
+
+© 2025 Swapnil Kale
